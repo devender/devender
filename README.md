@@ -7,7 +7,7 @@ constraints (SEC / FINRA), and I co-authored a security-token standard submitted
 Ethereum. 15+ years building the systems other engineers build on top of — from
 payments and securities infrastructure to the AI layer running on top of it today.
 
-🌐 [devender.me](http://devender.me) · 💼 [LinkedIn](https://www.linkedin.com/in/devendergollapally/) · 📍 Los Angeles · Remote
+🌐 [devender.me](http://devender.me) · 💼 [LinkedIn](https://www.linkedin.com/in/devender) · 📍 Los Angeles · Remote
 
 ---
 

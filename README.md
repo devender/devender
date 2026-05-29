@@ -40,6 +40,11 @@ is built on. Then I built the tokenization stack (hybrid AWS KMS + IOFinnet MPC 
 `PostgreSQL` · `Kafka` · `Redis` · `AWS (ECS, KMS, RDS, SES)` · `Terraform`
 `Claude` · `OpenAI` · `MCP` · `LangChain`
 
+### 🎒 Beyond the terminal
+
+- ✍️ I write & self-publish children's books as **[D.G Sunny](https://www.amazon.com/author/dgsunny)** — the *Red Robot* series and *The Cat Monster of Blackpine Mountain* (my words and stories; illustrations with AI).
+- 🎶 I play ukulele on **[YouTube (@gdevender)](https://www.youtube.com/@gdevender)**.
+
 ---
 
 <sub>Always happy to talk about applied AI in regulated domains, agent evaluation, or on-chain securities. Reach me via [devender.me](http://devender.me).</sub>

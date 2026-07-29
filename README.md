@@ -5,7 +5,7 @@
 I ship agentic, human-in-the-loop LLM systems that operate under real regulatory
 constraints (SEC / FINRA), and I'm a co-author of **[ERC-1450](https://eips.ethereum.org/EIPS/eip-1450)** —
 now a **Final** Ethereum standard for putting real securities on a public blockchain.
-15+ years building the systems other engineers build on top of — from payments and
+26 years building the systems other engineers build on top of — from payments and
 securities infrastructure to the AI layer running on top of it today.
 
 🌐 [devender.me](https://devender.me) · 💼 [LinkedIn](https://www.linkedin.com/in/devender) · 📍 Los Angeles · Remote

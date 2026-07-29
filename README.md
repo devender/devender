@@ -3,36 +3,47 @@
 **Principal Software Engineer — I build production AI systems in regulated finance.**
 
 I ship agentic, human-in-the-loop LLM systems that operate under real regulatory
-constraints (SEC / FINRA), and I co-authored a security-token standard submitted to
-Ethereum. 15+ years building the systems other engineers build on top of — from
-payments and securities infrastructure to the AI layer running on top of it today.
+constraints (SEC / FINRA), and I'm a co-author of **[ERC-1450](https://eips.ethereum.org/EIPS/eip-1450)** —
+now a **Final** Ethereum standard for putting real securities on a public blockchain.
+15+ years building the systems other engineers build on top of — from payments and
+securities infrastructure to the AI layer running on top of it today.
 
-🌐 [devender.me](http://devender.me) · 💼 [LinkedIn](https://www.linkedin.com/in/devender) · 📍 Los Angeles · Remote
+🌐 [devender.me](https://devender.me) · 💼 [LinkedIn](https://www.linkedin.com/in/devender) · 📍 Los Angeles · Remote
 
 ---
 
 ### 🤖 What I'm focused on now
 
 - **Agentic AI in production** — multi-step LLM workflows with humans in the loop, built for domains where a wrong answer has compliance consequences, not just a bad demo.
-- **Compliance-gated automation** — AI that drafts, a person who approves; every action auditable. Vendor due diligence, complaint handling (FINRA 4530), call supervision (FINRA 3110), and personalized investor outreach (voice-cloned + accreditation-gated).
-- **Evaluation & reliability** — the unglamorous half of applied AI: making agent output measurable, idempotent, and safe to put in front of regulated workflows.
-- **Prompt-caching & cost economics** at production scale.
+- **Compliance-gated automation** — AI that drafts, a person who approves; every action auditable. Built inside a regulated broker-dealer, with compliance as a design partner rather than a review gate.
+- **Evaluation & reliability** — the unglamorous half of applied AI: making agent output measurable, idempotent, and safe to put in front of regulated workflows. I publish the numbers, including the ones that don't flatter my own claims.
+- **MCP tool design** — what actually makes a tool surface usable *by a model*, measured rather than asserted.
 
 ### 🔗 Selected public work
 
 | Project | What it is |
 |---|---|
-| **[ERC-1450](https://github.com/StartEngine/erc1450-reference)** — RTA-Controlled Security Token Standard | SEC-compliant security-token standard + Halborn-audited reference contracts (UUPS, multi-sig). Submitted to Ethereum as [ERCs PR #1335](https://github.com/ethereum/ERCs/pull/1335). |
+| **[ERC-1450](https://eips.ethereum.org/EIPS/eip-1450)** — RTA-Controlled Security Token Standard | A **Final** Ethereum standard (July 2026): the on-chain token defers to a registered transfer agent, so a real security can live on a public chain without breaking securities law. Co-author — I revived it from *Stagnant* through Draft → Review → Last Call → Final. [Halborn-audited reference implementation](https://github.com/StartEngine/erc1450-reference) (Solidity, UUPS, multi-sig), in production behind hundreds of deployed securities. |
+| **[mcpwright](https://mcpwright.com)** — MCP servers for public data | Four published, typed, CI-gated MCP servers: [SEC EDGAR](https://github.com/mcpwright/edgar-mcp), [US Census](https://github.com/mcpwright/census-mcp), [IRS SOI](https://github.com/mcpwright/soi-mcp), [FRED](https://github.com/mcpwright/fred-mcp) — plus [mcpwright-core](https://github.com/mcpwright/mcpwright-core), the shared runtime they're all built on. On PyPI, in the official MCP Registry, and packaged as one-click Claude Desktop extensions. |
+| **[mcp-tool-surface-eval](https://github.com/mcpwright/mcp-tool-surface-eval)** | An eval harness for MCP tool-surface design decisions. Two experiments so far — one of which refuted my own hypothesis. I published that too. |
 | **[ethers-v6-kms-signer](https://github.com/StartEngine/ethers-v6-kms-signer)** | An ethers.js v6 signer backed by AWS KMS — sign EVM transactions without the private key ever leaving the HSM. |
 | **[iofinnet-openapi-spec](https://github.com/StartEngine/iofinnet-openapi-spec)** | Community-maintained OpenAPI 3.0 spec for the IOFinNet MPC custody API. |
+
+### ✍️ Writing
+
+I write about tool design, measurement, and building AI you can actually trust at
+**[devender.me](https://devender.me)**:
+
+- [**What Makes a Good MCP Tool Surface for an LLM**](https://devender.me/2026/06/04/good-mcp-tool-surface/) — six principles, each footnoted to a real shipped server.
+- [**When a Tool Description Is the Difference Between Right and Wrong**](https://devender.me/2026/06/10/tool-descriptions-measured/) — the follow-up eval: one caveat sentence took a model from 0% to 100% on correctly reading a capped statistic.
 
 ### 🏗️ Background
 
 Before AI, I spent six years building the core of a securities platform that has moved
 **$1B+** in compliant offerings: payments, escrow, secondary-market trading, the
 recommendation engine, the data warehouse, and the shared libraries every microservice
-is built on. Then I built the tokenization stack (hybrid AWS KMS + IOFinnet MPC custody,
-500K+ on-chain mints on Polygon) and the AI platform running on top of all of it.
+is built on. Then I built the tokenization stack — hybrid AWS KMS + IOFinnet MPC custody,
+hundreds of securities live on Polygon — and the AI platform running on top of all of it.
 
 ### 🛠️ Tech
 
@@ -47,4 +58,4 @@ is built on. Then I built the tokenization stack (hybrid AWS KMS + IOFinnet MPC 
 
 ---
 
-<sub>Always happy to talk about applied AI in regulated domains, agent evaluation, or on-chain securities. Reach me via [devender.me](http://devender.me).</sub>
+<sub>Always happy to talk about applied AI in regulated domains, agent evaluation, or on-chain securities. Reach me via [devender.me](https://devender.me).</sub>

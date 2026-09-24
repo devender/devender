@@ -25,6 +25,7 @@ securities infrastructure to the AI layer running on top of it today.
 |---|---|
 | **[ERC-1450](https://eips.ethereum.org/EIPS/eip-1450)** — RTA-Controlled Security Token Standard | A **Final** Ethereum standard (July 2026): the on-chain token defers to a registered transfer agent, so a real security can live on a public chain without breaking securities law. Co-author — I revived it from *Stagnant* through Draft → Review → Last Call → Final. [Halborn-audited reference implementation](https://github.com/StartEngine/erc1450-reference) (Solidity, UUPS, multi-sig), in production behind hundreds of deployed securities. |
 | **[mcpwright](https://mcpwright.com)** — MCP servers for public data | Four published, typed, CI-gated MCP servers: [SEC EDGAR](https://github.com/mcpwright/edgar-mcp), [US Census](https://github.com/mcpwright/census-mcp), [IRS SOI](https://github.com/mcpwright/soi-mcp), [FRED](https://github.com/mcpwright/fred-mcp) — plus [mcpwright-core](https://github.com/mcpwright/mcpwright-core), the shared runtime they're all built on. On PyPI, in the official MCP Registry, and packaged as one-click Claude Desktop extensions. |
+| **[hubspot-multi-mcp](https://github.com/devender/hubspot-multi-mcp)** — many HubSpot portals, one conversation | An unofficial MCP server that connects Claude to several HubSpot portals at once, by name. HubSpot's official servers bind one connection to one portal. This one can also search across every portal in a single call. Read-only by construction, and tokens stay on your machine and are never printed. On [npm](https://www.npmjs.com/package/hubspot-multi-mcp): `npx hubspot-multi-mcp setup`. |
 | **[mcp-tool-surface-eval](https://github.com/mcpwright/mcp-tool-surface-eval)** | An eval harness for MCP tool-surface design decisions. Two experiments so far — one of which refuted my own hypothesis. I published that too. |
 | **[ethers-v6-kms-signer](https://github.com/StartEngine/ethers-v6-kms-signer)** | An ethers.js v6 signer backed by AWS KMS — sign EVM transactions without the private key ever leaving the HSM. |
 | **[iofinnet-openapi-spec](https://github.com/StartEngine/iofinnet-openapi-spec)** | Community-maintained OpenAPI 3.0 spec for the IOFinNet MPC custody API. |
@@ -34,6 +35,8 @@ securities infrastructure to the AI layer running on top of it today.
 I write about tool design, measurement, and building AI you can actually trust at
 **[devender.me](https://devender.me)**:
 
+- [**How Do You Let AI Agents Into Regulated Data?**](https://devender.me/2026/09/24/how-do-you-let-ai-agents-into-regulated-data/) — don't hand the model database credentials; put it behind the governed BI layer you already have.
+- [**One MCP Server, All Your HubSpot Portals**](https://devender.me/2026/08/28/one-mcp-server-all-your-hubspot-portals/) — why hubspot-multi-mcp is read-only by construction, and what searching across portals buys you.
 - [**What Makes a Good MCP Tool Surface for an LLM**](https://devender.me/2026/06/04/good-mcp-tool-surface/) — six principles, each footnoted to a real shipped server.
 - [**When a Tool Description Is the Difference Between Right and Wrong**](https://devender.me/2026/06/10/tool-descriptions-measured/) — the follow-up eval: one caveat sentence took a model from 0% to 100% on correctly reading a capped statistic.
 
